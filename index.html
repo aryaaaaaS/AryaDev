@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Arya S.">
+  <link rel="shortcut icon" href="images/logo.png">
+
+  <meta name="description" content="Arya S. - Aspiring Software Developer | Computer Engineering Student | Frontend & AI Enthusiast" />
+  <meta name="keywords" content="software developer, computer engineering, frontend development, AI, machine learning, portfolio" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Arya S. - Software Developer Portfolio</title>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+
+  <div class="lines-wrap">
+    <div class="lines-inner">
+      <div class="lines"></div>
+    </div>
+  </div>
+  <!-- END lines -->
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  
+  <nav class="site-nav dark mb-5 site-navbar-target fixed-navbar">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0">Arya<span class="text-primary">.</span></a>
+        <ul class="js-clone-nav site-menu float-right site-nav-wrap">
+          <li><a href="#home-section" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#portfolio-section" class="nav-link"><i class="fas fa-th-large"></i> Projects</a></li>
+          <li><a href="#about-section" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#services-section" class="nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
+          <li><a href="#contact-section" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <!-- Removed burger menu -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="untree_co-section pb-0 hero-gradient-bg" id="home-section" style="background: #111112; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div class="container-fluid">
+      <div class="row justify-content-center text-center">
+        <div class="col-12">
+          <h1 id="big-hero-title" style="font-size:12vw; font-weight:900; letter-spacing:-2px; background: linear-gradient(90deg, #232946 0%, #bcbec2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent; margin-bottom: 0.2em; text-transform:uppercase; display:inline-block; opacity:0; transform:scale(0.92); transition:opacity 1s cubic-bezier(.4,2,.6,1), transform 1s cubic-bezier(.4,2,.6,1);">SOFTWARE<br>INNOVATOR</h1>
+          <div style="width:100%; max-width:520px; margin:0 auto 2.5em auto; border-bottom:2px solid #232946; opacity:0.7;"></div>
+          <div style="margin-top:1.2em; display:flex; justify-content:center;">
+            <span id="scroll-down-arrow" style="display:flex; align-items:center; justify-content:center; width:56px; height:56px; border-radius:50%; border:2px solid #0094ff; color:#fff; background:#0094ff; font-size:2.2rem; opacity:0.95; cursor:pointer; animation: bounceDown 1.5s infinite alternate; box-shadow:0 4px 18px #0094ff44; transition:background 0.2s, color 0.2s;">
+              <i class="fas fa-arrow-down"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  var title = document.getElementById('big-hero-title');
+  setTimeout(function() {
+    title.style.opacity = 1;
+    title.style.transform = 'scale(1)';
+  }, 100);
+
+  // Scroll down arrow click handler
+  var scrollArrow = document.getElementById('scroll-down-arrow');
+  if(scrollArrow) {
+    scrollArrow.addEventListener('click', function() {
+      var skillset = document.getElementById('skillset-section');
+      if(skillset) {
+        skillset.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+});
+</script>
+<style>
+@keyframes bounceDown {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(18px); }
+}
+</style>
+
+  <!-- Tech Stack Section (animated marquee version) -->
+  <div class="untree_co-section dark-bg" id="techstack-section" style="padding-top:2.5rem; padding-bottom:0; margin-bottom:0;">
+    <div class="marquee-fade-wrap" style="position:relative; width:100vw; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; overflow:hidden;">
+      <div class="techstack-marquee" style="width:100vw;">
+        <div class="marquee-row">
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452228/html-5.svg" alt="HTML5"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452185/css-3.svg" alt="CSS3"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Bash"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452234/java.svg" alt="Java"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452202/figma.svg" alt="Figma"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/349419/javascript.svg" alt="JavaScript"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"></div>
+        </div>
+        <div class="marquee-row">
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Bash"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452228/html-5.svg" alt="HTML5"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452185/css-3.svg" alt="CSS3"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452234/java.svg" alt="Java"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452202/figma.svg" alt="Figma"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/349419/javascript.svg" alt="JavaScript"></div>
+          <div class="tech-logo"><img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python"></div>
+          <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"></div>
+        </div>
+      </div>
+      <div class="marquee-fade-left" style="position:absolute; left:0; top:0; width:80px; height:100%; pointer-events:none; z-index:2; background:linear-gradient(90deg,#181a1b 80%,transparent);"></div>
+      <div class="marquee-fade-right" style="position:absolute; right:0; top:0; width:80px; height:100%; pointer-events:none; z-index:2; background:linear-gradient(270deg,#181a1b 80%,transparent);"></div>
+    </div>
+    <style>
+      .techstack-marquee {
+        overflow: hidden;
+        width: 100%;
+        background: #181a1b;
+        padding: 2em 0 1em 0;
+      }
+      .marquee-row {
+        display: flex;
+        gap: 2.5em;
+        animation: marquee 22s linear infinite;
+      }
+      .marquee-row:nth-child(2) {
+        animation-duration: 28s;
+        animation-direction: reverse;
+      }
+      .marquee-row:nth-child(3) {
+        animation-duration: 34s;
+      }
+      .tech-logo {
+        min-width: 120px;
+        min-height: 80px;
+        background: rgba(35,41,70,0.55); /* semi-transparent glassy look */
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        box-shadow: 0 2px 18px 0 rgba(0,0,0,0.13), 0 1.5px 8px 0 #23294633, 0 0.5px 1.5px 0 #0094ff22;
+        transition: box-shadow 0.18s, transform 0.18s;
+      }
+      .tech-logo:hover {
+        box-shadow: 0 8px 32px 0 #0094ff44, 0 2px 16px 0 #232946, 0 0.5px 1.5px 0 #0094ff44;
+        transform: scale(1.08);
+      }
+      .tech-logo img {
+        max-height: 48px;
+        max-width: 100px;
+        filter: none !important;
+      }
+      .techstack-marquee:hover {
+        cursor: crosshair;
+      }
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+    </style>
+  </div>
+<!-- Divider after Tech Stack Section -->
+<div class="section-divider" style="border-top: 2.5px solid #232946; opacity: 0.9; position: relative; z-index: 10; margin: 0; width: 100vw; left: 50%; right: 50%; transform: translateX(-50%);"></div>
+
+  <!-- About Me Section (modern two-column CV style) -->
+  <div class="untree_co-section" id="about-section" style="background: #181a1b; padding-top:0; margin-top:0;">
+    <div class="container" style="margin-top:0; padding-top:0;">
+      <div class="text-center mb-5">
+        <h2 class="section-heading gsap-reveal-hero mb-3" style="font-weight:700; color:#7f7fd5; font-size:2.4rem;">About Me</h2>
+        <div class="wave gsap-reveal-hero mb-4" style="margin:0 auto;">
+          <svg width="90" height="20"><path d="M10,10 Q30,20 50,10 T90,10" stroke="#0389ff" stroke-width="3" fill="none"></path></svg>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center" style="min-height: 420px;">
+        <!-- Left: About Image and Info -->
+        <div class="col-md-4 text-center text-md-left mb-4 mb-md-0">
+          <img src="images/hero.png" alt="Arya S." class="img-fluid rounded shadow" style="max-width: 220px; border-radius: 8px; margin-bottom: 1.2em;">
+        </div>
+        <!-- Right: About Details -->
+        <div class="col-md-7 offset-md-1 text-left">
+          <div style="margin-bottom:1.5em;">
+            <div style="font-weight:700; font-size:1.15rem; margin-bottom:0.3em; color:#0389ff;"></div>
+            <div>
+              <div style="color:#bcbec2; font-size:1.1rem; font-weight:500; margin-bottom:0.2em;">Hey, I'm</div>
+              <div style="color:#fff; font-size:2.2rem; font-weight:900; line-height:1.1; margin-bottom:0.1em;">Arya Shendge</div>
+              <div style="color:#fff; font-size:1.25rem; font-weight:700; margin-bottom:0.5em;">Software Developer & Tech Enthusiast</div>
+              <div style="font-size:1.02rem; color:#bcbec2;">I'm a Computer Engineering student passionate about building real-world projects in web, AI, and software development. I enjoy solving problems and learning new technologies. I believe design is a process and communication is key. I strive to create impactful products and collaborate on innovative solutions.</div>
+            </div>
+          </div>
+          <div style="margin-bottom:1.5em;">
+            <div style="font-weight:700; font-size:1.15rem; margin-bottom:0.3em; color:#0389ff;">Education</div>
+            <div style="font-size:1.02rem; color:#bcbec2;">
+              2025-2028, BTech in Computer Engineering<br>
+              2022-2025, Diploma in Computer Engineering
+            </div>
+          </div>
+          <div style="margin-bottom:1.5em;">
+            <div style="font-weight:700; font-size:1.15rem; margin-bottom:0.3em; color:#0389ff;">Work</div>
+            <div style="font-size:1.02rem; color:#bcbec2;">2024, Data Analyst Intern, FlyIT Infotech<br>2023, Frontend Developer Intern, TechStart Solutions</div>
+          </div>
+          <div>
+            <div style="font-weight:700; font-size:1.15rem; margin-bottom:0.3em; color:#0389ff;">Skills</div>
+            <div style="font-size:1.02rem; color:#bcbec2;">
+              <div style="display:flex; align-items:center; margin-bottom:0.4em;">
+                <span style="width:120px;">Python</span>
+                <span style="flex:1; height:8px; background:#a8edea; border-radius:4px; margin-left:1em; display:inline-block; max-width:180px;"></span>
+              </div>
+              <div style="display:flex; align-items:center; margin-bottom:0.4em;">
+                <span style="width:120px;">Frontend</span>
+                <span style="flex:0.85; height:8px; background:#a8edea; border-radius:4px; margin-left:1em; display:inline-block; max-width:150px;"></span>
+              </div>
+              <div style="display:flex; align-items:center; margin-bottom:0.4em;">
+                <span style="width:120px;">Backend</span>
+                <span style="flex:0.7; height:8px; background:#a8edea; border-radius:4px; margin-left:1em; display:inline-block; max-width:120px;"></span>
+              </div>
+              <div style="display:flex; align-items:center; margin-bottom:0.4em;">
+                <span style="width:120px;">Android</span>
+                <span style="flex:0.6; height:8px; background:#a8edea; border-radius:4px; margin-left:1em; display:inline-block; max-width:100px;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Divider after About Section -->
+<div class="section-divider" style="border-top: 2.5px solid #232946; opacity: 0.9; position: relative; z-index: 10; margin: 0; width: 100vw; left: 50%; right: 50%; transform: translateX(-50%);"></div>
+
+<!-- Technical Skills Section (full-width seamless black) -->
+<div class="untree_co-section" id="skills-section" style="background: #111112; padding: 3.5rem 0 2.8rem 0; margin: 0; width: 100vw; position: relative; left: 50%; right: 50%; transform: translateX(-50%); text-align: center;">
+  <div class="text-center mb-4">
+    <h2 class="section-heading gsap-reveal-hero mb-2" style="font-weight: 800; color: #fff; font-size: 2.3rem; letter-spacing: 1.5px;">Technical Skills</h2>
+    <div class="wave gsap-reveal-hero mb-3" style="margin:0 auto;">
+      <svg width="90" height="20"><path d="M10,10 Q30,20 50,10 T90,10" stroke="#0389ff" stroke-width="3" fill="none"></path></svg>
+    </div>
+  </div>
+  <div class="skills-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2.7em; max-width: 900px; margin: 0 auto;">
+    <div class="skill-logo-box">
+      <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python">
+      <div class="skill-label">Python</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS">
+      <div class="skill-label">ReactJS</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://www.svgrepo.com/show/349419/javascript.svg" alt="JavaScript">
+      <div class="skill-label">JavaScript</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://www.svgrepo.com/show/452228/html-5.svg" alt="HTML5">
+      <div class="skill-label">HTML5</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://www.svgrepo.com/show/452185/css-3.svg" alt="CSS3">
+      <div class="skill-label">CSS3</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+      <div class="skill-label">Git</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+      <div class="skill-label">Linux</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://www.svgrepo.com/show/452202/figma.svg" alt="Figma">
+      <div class="skill-label">Figma</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+      <div class="skill-label">MongoDB</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+      <div class="skill-label">PHP</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+      <div class="skill-label">Node.js</div>
+    </div>
+    <div class="skill-logo-box">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+      <div class="skill-label">MySQL</div>
+    </div>
+  </div>
+  <style>
+    #skills-section .skills-grid {
+      margin-top: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    #skills-section .skill-logo-box {
+      background: #111112;
+      border-radius: 18px;
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 90px;
+      min-height: 90px;
+      max-width: 100px;
+      max-height: 100px;
+      padding: 1.1em 0.7em 0.5em 0.7em;
+      transition: box-shadow 0.18s, transform 0.18s;
+      cursor: crosshair;
+    }
+    #skills-section .skill-logo-box img {
+      max-height: 48px;
+      max-width: 70px;
+      filter: none !important;
+      transition: filter 0.18s;
+    }
+    #skills-section .skill-logo-box:hover {
+      box-shadow: 0 8px 32px 0 #0094ff44, 0 2px 16px 0 #232946, 0 0.5px 1.5px 0 #0094ff44;
+      transform: scale(1.10);
+    }
+    #skills-section .skill-label {
+      font-size: 0.92rem;
+      color: #bcbec2;
+      margin-top: 0.45em;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-align: center;
+      user-select: none;
+    }
+  </style>
+</div>
+<!-- Divider after Technical Skills Section -->
+<div class="section-divider" style="border-top: 2.5px solid #232946; opacity: 0.9; position: relative; z-index: 10; margin: 0; width: 100vw; left: 50%; right: 50%; transform: translateX(-50%);"></div>
+
+  <!-- Projects Section -->
+  <div class="untree_co-section untree_co-section-4 pb-0 dark-bg"  id="portfolio-section">
+    <div class="container">
+
+      <!-- Spacer to push projects further down -->
+      <!-- <div style="height: 120px;"></div> -->
+      <!-- Optional: Visual separator -->
+      <div class="text-center mb-5">
+        <h2 class="section-heading gsap-reveal-hero mb-3" style="font-weight:700; color:#7f7fd5;">Projects</h2>
+        <div class="wave gsap-reveal-hero mb-4" style="margin:0 auto;">
+          <svg width="90" height="20"><path d="M10,10 Q30,20 50,10 T90,10" stroke="#0389ff" stroke-width="3" fill="none"></path></svg>
+        </div>
+      </div>
+
+      <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
+      <div id="portfolio-single-holder"></div>
+
+      <div class="project-grid">
+        <a href="https://example.com/project1" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+            <img src="images/img2.png" alt="LIC&STAR health insurance agent portfolio" class="project-img">
+            <div class="project-content">
+              <span class="project-category">Web Design</span>
+              <h3 class="project-title">LIC&STAR health insurance agent portfolio</h3>
+              <p class="project-desc">Html, Css, JavaScript, Bootstrap, Jquery</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/aryaaaaaS/ADHD" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/img1.png" alt="ADHD Detection Web App" class="project-img">
+            <div class="project-content">
+              <span class="project-category">AI/ML</span>
+              <h3 class="project-title">ADHD Detection Web App</h3>
+              <p class="project-desc">HTML, CSS, JS, Python ML</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://resto-puce.vercel.app/" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/img3.png" alt="Restaurant Website" class="project-img">
+            <div class="project-content">
+              <span class="project-category">Web Design</span>
+              <h3 class="project-title">Restaurant Website</h3>
+              <p class="project-desc">Bootstrap, HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/aryaaaaaS/Java-Quiz-App" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/im4.png" alt="Java Quiz App" class="project-img">
+            <div class="project-content">
+              <span class="project-category">Java</span>
+              <h3 class="project-title">Java Quiz App</h3>
+              <p class="project-desc">MySQL, Java</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://airsound-nine.vercel.app/" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/img_5.jpg" alt="Airsound Headphones Website" class="project-img">
+            <div class="project-content">
+              <span class="project-category">Web Design</span>
+              <h3 class="project-title">Airsound Headphones Website</h3>
+              <p class="project-desc">Html, CSS, JavaScript</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/aryaaaaaS/Attendence-Management-System" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+            <img src="images/img5.png" alt="Attendence Management System" class="project-img">
+            <div class="project-content">
+              <span class="project-category">Python</span>
+              <h3 class="project-title">Attendence Management System</h3>
+              <p class="project-desc">Python</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://psycho-circus.vercel.app/" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+            <img src="images/img9.png" alt="Psycho Circus" class="project-img">
+            <div class="project-content">
+              <span class="project-category">Web Design</span>
+              <h3 class="project-title">Psycho Circus</h3>
+              <p class="project-desc">Html, Css, JavaScript</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/aryaaaaaS/ilanding" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="700">
+            <img src="images/landing.png" alt="iLanding Page Project" class="project-img">
+            <div class="project-content">
+              <span class="project-category">Landing Page</span>
+              <h3 class="project-title">iLanding Page Project</h3>
+              <p class="project-desc">Modern responsive landing page using HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://typingame-sage.vercel.app/" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+            <img src="images/crud.png" alt="Typing Game" class="project-img">
+            <div class="project-content">
+              <span class="project-category">Game</span>
+              <h3 class="project-title">Typing Game</h3>
+              <p class="project-desc">Fun typing speed game using HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://crud-two-rho.vercel.app/" target="_blank" class="project-link">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="900">
+            <img src="images/typing.png" alt="CRUD Login" class="project-img">
+            <div class="project-content">
+              <span class="project-category">Full Stack</span>
+              <h3 class="project-title">CRUD Login</h3>
+              <p class="project-desc">User login and CRUD operations with PHP, MySQL, HTML, CSS</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+<!-- Divider after Projects Section -->
+<div class="section-divider" style="border-top: 2.5px solid #232946; opacity: 0.9; position: relative; z-index: 10; margin: 0; width: 100vw; left: 50%; right: 50%; transform: translateX(-50%);"></div>
+
+
+    <div class="untree_co-section dark-bg">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Achievements & Experience</strong></h2>
+            <p class="gsap-reveal-hero">Recognition & Professional Growth</p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff" stroke-width="2"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="post-entry">
+              <div class="achievement-content">
+                <h3><a href="#">Data Analyst Internship</a></h3>
+                <div class="post-meta">
+                  <strong>FlyIT Infotech, Panvel</strong><br>
+                  Duration: 3 months | 2024<br>
+                  • Python scripting & automation<br>
+                  • Machine learning model implementation<br>
+                  • Data analysis with Pandas & NumPy<br>
+                  • SQL database management<br>
+                  • Created 5+ automated reports
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="post-entry">
+              <div class="achievement-content">
+                <h3><a href="#">Frontend Development Intern</a></h3>
+                <div class="post-meta">
+                  <strong>TechStart Solutions, Mumbai</strong><br>
+                  Duration: 4 months | 2023<br>
+                  • React.js & Next.js development<br>
+                  • Responsive UI/UX design<br>
+                  • API integration & state management<br>
+                  • Built 3 client websites<br>
+                  • Performance optimization
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-entry">
+              <div class="achievement-content">
+                <h3><a href="#">Cybersecurity Certifications</a></h3>
+                <div class="post-meta">
+                  <strong>Multiple Certifications</strong><br>
+                  • Infosys Springboard – Cybersecurity<br>
+                  • HP Life – Cybersecurity<br>
+                  • Network Security Fundamentals<br>
+                  • Ethical Hacking Basics<br>
+                  • Security Best Practices
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="post-entry">
+              <div class="achievement-content">
+                <h3><a href="#">AI/ML & Web Development</a></h3>
+                <div class="post-meta">
+                  <strong>Certifications & Projects</strong><br>
+                  • CodSoft – AI/ML Internship<br>
+                  • Additional ML badges<br>
+                  • Web Development certificates<br>
+                  • Full-stack development skills<br>
+                  • Cloud deployment experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-4">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="post-entry">
+              <div class="achievement-content">
+                <h3><a href="#">Freelance Web Developer</a></h3>
+                <div class="post-meta">
+                  <strong>Self-Employed | 2023-Present</strong><br>
+                  • PHP + MySQL full-stack development<br>
+                  • Custom WordPress themes<br>
+                  • E-commerce solutions<br>
+                  • 15+ client projects completed<br>
+                  • 100% client satisfaction rate
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="post-entry">
+              <div class="achievement-content">
+                <h3><a href="#">Android App Developer</a></h3>
+                <div class="post-meta">
+                  <strong>Personal Projects | 2023</strong><br>
+                  • XML + Java development<br>
+                  • Material Design implementation<br>
+                  • 5+ published apps<br>
+                  • User experience optimization<br>
+                  • Cross-device compatibility
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="post-entry">
+              <div class="achievement-content">
+                <h3><a href="#">Sports Achievements</a></h3>
+                <div class="post-meta">
+                  <strong>Cricket Excellence</strong><br>
+                  • Zonal level cricket player<br>
+                  • District level championships<br>
+                  • College team captain<br>
+                  • Multiple tournament wins<br>
+                  • Leadership & teamwork skills
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+            <div class="post-entry">
+              <div class="achievement-content">
+                <h3><a href="#">Community Leadership</a></h3>
+                <div class="post-meta">
+                  <strong>Event Organization</strong><br>
+                  • Tech mentorship programs<br>
+                  • College event coordinator<br>
+                  • Student council member<br>
+                  • Workshop facilitator<br>
+                  • Team management experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Divider before Contact Section -->
+<div class="section-divider" style="border-top: 2.5px solid #232946; opacity: 0.9; position: relative; z-index: 10; margin: 0; width: 100vw; left: 50%; right: 50%; transform: translateX(-50%);"></div>
+
+<!-- Modern Contact Section Start -->
+<div class="untree_co-section" id="contact-section" style="background: #f7faff; padding: 60px 0 40px 0; text-align: center;">
+  <div class="container">
+    <div style="color: #bcbec2; font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 0.2em;">Contact</div>
+    <h2 style="font-size: 2.8rem; font-weight: 800; color: #232946; margin-bottom: 0.2em; font-family: 'Montserrat', Arial, sans-serif;">Get in Touch</h2>
+    <div class="wave mb-3" style="margin:0 auto 1.2em auto; width:90px;">
+      <svg width="90" height="20"><path d="M10,10 Q30,20 50,10 T90,10" stroke="#232946" stroke-width="3" fill="none"></path></svg>
+    </div>
+    <div style="max-width: 540px; margin: 0 auto 1.5em auto; color: #e6e9f0; font-size: 1.08rem; font-weight: 500;">Open to exciting collaborations and passionate about building cool things together! If you’ve got a project in mind or just want to geek out over code, don’t hesitate to drop a message.</div>
+    <!-- Removed email text/link -->
+    <div class="contact-socials" style="display: flex; justify-content: center; gap: 28px; margin-top: 1.2em;">
+      <a href="mailto:aryaaakiran8106@gmail.com" class="contact-social-icon" style="color: #232946; font-size: 2.1em; transition: color 0.18s, transform 0.18s;"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/arya-shendge-011a11328/" target="_blank" class="contact-social-icon" style="color: #232946; font-size: 2.1em; transition: color 0.18s, transform 0.18s;"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/aryaaaaaS" target="_blank" class="contact-social-icon" style="color: #232946; font-size: 2.1em; transition: color 0.18s, transform 0.18s;"><i class="fab fa-github"></i></a>
+      <a href="https://discord.com/users/your-discord-id" target="_blank" class="contact-social-icon" style="color: #232946; font-size: 2.1em; transition: color 0.18s, transform 0.18s;"><i class="fab fa-discord"></i></a>
+    </div>
+    <style>
+      .contact-social-icon:hover {
+        color: #0094ff !important;
+        transform: scale(1.18);
+      }
+    </style>
+  </div>
+</div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/wave-animate.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <script src="js/imagesloaded.pkgd.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic.animation.gsap.min.js"></script>
+
+
+    <script src="js/custom.js"></script>
+    
+  </body>
+
+  </html>
