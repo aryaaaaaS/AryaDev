@@ -62,6 +62,11 @@ $(function(){
 				if ( $('body').hasClass('offcanvas-menu') ) {
 					$('body').removeClass('offcanvas-menu');
 				}
+				// Close mobile navbar menu when switching to desktop
+				if ($('.site-nav').hasClass('mobile-menu-active')) {
+					$('.site-nav').removeClass('mobile-menu-active');
+					$('.js-menu-toggle .burger').removeClass('active');
+				}
 			}
 		})
 
@@ -69,12 +74,25 @@ $(function(){
 			var $this = $(this);
 			e.preventDefault();
 
-			if ( $('body').hasClass('offcanvas-menu') ) {
-				$('body').removeClass('offcanvas-menu');
-				$('body').find('.js-menu-toggle').removeClass('active');
+			// Check if we're on mobile (screen width <= 767px)
+			if ($(window).width() <= 767) {
+				// Toggle mobile navbar menu
+				if ($('.site-nav').hasClass('mobile-menu-active')) {
+					$('.site-nav').removeClass('mobile-menu-active');
+					$('.js-menu-toggle .burger').removeClass('active');
+				} else {
+					$('.site-nav').addClass('mobile-menu-active');
+					$('.js-menu-toggle .burger').addClass('active');
+				}
 			} else {
-				$('body').addClass('offcanvas-menu');
-				$('body').find('.js-menu-toggle').addClass('active');
+				// Original offcanvas menu for larger screens
+				if ( $('body').hasClass('offcanvas-menu') ) {
+					$('body').removeClass('offcanvas-menu');
+					$('body').find('.js-menu-toggle').removeClass('active');
+				} else {
+					$('body').addClass('offcanvas-menu');
+					$('body').find('.js-menu-toggle').addClass('active');
+				}
 			}
 		}) 
 
@@ -86,6 +104,23 @@ $(function(){
 					$('body').removeClass('offcanvas-menu');
 					$('body').find('.js-menu-toggle').removeClass('active');
 				}
+			}
+			
+			// Close mobile navbar menu when clicking outside
+			var mobileNavContainer = $(".site-nav");
+			if (!mobileNavContainer.is(e.target) && mobileNavContainer.has(e.target).length === 0) {
+				if ($('.site-nav').hasClass('mobile-menu-active')) {
+					$('.site-nav').removeClass('mobile-menu-active');
+					$('.js-menu-toggle .burger').removeClass('active');
+				}
+			}
+		});
+		
+		// Close mobile menu when clicking on a menu item
+		$('body').on('click', '.site-nav .site-menu li a', function() {
+			if ($(window).width() <= 767) {
+				$('.site-nav').removeClass('mobile-menu-active');
+				$('.js-menu-toggle .burger').removeClass('active');
 			}
 		});
 	}; 
